@@ -2,7 +2,8 @@
 node_modules/
 **/wwwroot/css/output.css
 temp/
-
+**/results/*
+**/benchmark_results/*
 ## .NET Core
 bin/
 obj/
