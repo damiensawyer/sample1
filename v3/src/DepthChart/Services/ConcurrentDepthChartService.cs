@@ -10,7 +10,7 @@ public class ConcurrentDepthChartService(IReadOnlySet<string> sportPositions) : 
 {
   private readonly ConcurrentDictionary<string, List<Player>> _depthCharts = new(StringComparer.OrdinalIgnoreCase);
   private readonly HashSet<string> _sportPositions = new(sportPositions ?? throw new ArgumentNullException(nameof(sportPositions)), StringComparer.OrdinalIgnoreCase);
-  private readonly Lock _syncLock = new();
+  private readonly object _syncLock = new();
 
   public void AddPlayerToDepthChart(Player player, string position, int? positionDepth = null)
   {
