@@ -1,0 +1,15 @@
+# Core EditorConfig Options
+root = true
+
+# Basic settings for all files
+[*]
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+end_of_line = lf
+
+# Code files
+[*.{cs,csx}]
+indent_size = 2
+file_header_template = (c) D.Sawyer <damiensawyer@gmail.com> 2025

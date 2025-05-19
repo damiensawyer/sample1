@@ -1,0 +1,20 @@
+<Solution>
+    <Configurations>
+        <Platform Name="Any CPU"/>
+        <Platform Name="x64"/>
+        <Platform Name="x86"/>
+    </Configurations>
+    <Folder Name="/src/">
+        <Project Path="src/DepthChart/DepthChart.csproj"/>
+    </Folder>
+    <Folder Name="/tests/">
+        <Project Path="tests/DepthChart.Tests/DepthChart.Tests.csproj"/>
+        <Project Path="tests/TestHelpers/TestHelpers.csproj"/>
+        <Project Path="tests\DepthChart.Benchmarks.Tests\DepthChart.Benchmarks.Tests.csproj" Type="Classic C#">
+            <Configuration Solution="Debug|x64" Project="Debug|Any CPU"/>
+            <Configuration Solution="Debug|x86" Project="Debug|Any CPU"/>
+            <Configuration Solution="Release|x64" Project="Release|Any CPU"/>
+            <Configuration Solution="Release|x86" Project="Release|Any CPU"/>
+        </Project>
+    </Folder>
+</Solution>

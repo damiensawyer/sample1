@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <!-- Global properties for all projects -->
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PublishAot>false</PublishAot>
+  </PropertyGroup>
+
+</Project>
